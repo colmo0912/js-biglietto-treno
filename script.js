@@ -8,7 +8,7 @@ var prezzoAlKm = 0.21;
 console.log(parseFloat(prezzoAlKm));
 
 var prezzoBiglietto = numKm * prezzoAlKm;
-console.log(prezzoBiglietto);
+console.log(prezzoBiglietto.toFixed(2));
 
 var passeggeroMinorenne = parseInt(17);
 // console.log(parseInt(passeggeroMinorenne));
@@ -23,13 +23,13 @@ var passeggeroOver = parseInt(65);
 
 if(anniPasseggero<=passeggeroMinorenne){
 
-    console.log(prezzoBiglietto-((prezzoBiglietto*20)/100))
+    console.log("Il prezzo del tuo biglietto è " + (prezzoBiglietto-((prezzoBiglietto*20)/100)).toFixed(2) +" euro")
 }
-if(anniPasseggero>=passeggeroOver){
+else if(anniPasseggero>=passeggeroOver){
 
-    console.log(prezzoBiglietto-((prezzoBiglietto*40)/100))
+    console.log("Il prezzo del tuo biglietto è " + (prezzoBiglietto-((prezzoBiglietto*40)/100)).toFixed(2) +" euro")
 }
 else {
 
-    console.log("il passeggero non ha sconti sul biglietto")
+    console.log("Il prezzo del tuo biglietto è " + prezzoBiglietto +" euro" )
 }
