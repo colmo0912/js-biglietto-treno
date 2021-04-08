@@ -21,15 +21,15 @@ var passeggeroOver = parseInt(65);
 
 
 
-if(anniPasseggero<passeggeroMinorenne){
+if(anniPasseggero<=passeggeroMinorenne){
 
-    console.log("Usufruisci dello sconto del 20%! Il prezzo del tuo biglietto è " + (prezzoBiglietto-((prezzoBiglietto*20)/100)).toFixed(2) +" euro")
+    document.write("Usufruisci dello sconto del 20%! Il prezzo del tuo biglietto è " + (prezzoBiglietto-((prezzoBiglietto*20)/100)).toFixed(2) +" euro")
 }
 else if(anniPasseggero>=passeggeroOver){
 
-    console.log("Il prezzo del tuo biglietto è " + (prezzoBiglietto-((prezzoBiglietto*40)/100)).toFixed(2) +" euro")
+    document.write("Usufruisci dello sconto del 40%! Il prezzo del tuo biglietto è " + (prezzoBiglietto-((prezzoBiglietto*40)/100)).toFixed(2) +" euro")
 }
 else {
 
-    console.log("Usufruisci dello sconto del 40%! Il prezzo del tuo biglietto è " + prezzoBiglietto +" euro" )
+    document.write("Il prezzo del tuo biglietto è " + prezzoBiglietto +" euro" )
 }
