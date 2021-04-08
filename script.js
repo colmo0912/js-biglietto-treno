@@ -23,12 +23,13 @@ var passeggeroOver = parseInt(65);
 
 if(anniPasseggero<=passeggeroMinorenne){
 
-    console.log("il passeggero è minorenne")
+    console.log(prezzoBiglietto-((prezzoBiglietto*20)/100))
 }
 if(anniPasseggero>=passeggeroOver){
 
-    console.log("il passeggero ha più di 65 anni")
-}else {
+    console.log(prezzoBiglietto-((prezzoBiglietto*40)/100))
+}
+else {
 
     console.log("il passeggero non ha sconti sul biglietto")
 }
