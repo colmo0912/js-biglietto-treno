@@ -5,4 +5,7 @@ console.log(anniPasseggero);
 
 var prezzoAlKm = 0.21;
 
-console.log(parseFloat(prezzoAlKm))
+console.log(parseFloat(prezzoAlKm));
+
+var prezzoBiglietto = numKm * prezzoAlKm;
+console.log(prezzoBiglietto)
