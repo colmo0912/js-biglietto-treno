@@ -1,3 +1,5 @@
+
+
 var numKm = parseInt (prompt("Quanti KM devi percorrere?"));
 // console.log(numKm);
 var anniPasseggero = parseInt (prompt("Quanti anni ha il passeggero?"));
@@ -19,6 +21,10 @@ var passeggeroMinorenne = parseInt(17);
 var passeggeroOver = parseInt(65);
 // console.log(parseInt(passeggeroOver));
 
+if(numKm,anniPasseggero !== Number){
+    alert("Inserisci caratteri numerici per specificare numero di km ed età")
+} else {
+
 
 
 if(anniPasseggero<=passeggeroMinorenne){
@@ -32,4 +38,6 @@ else if(anniPasseggero>=passeggeroOver){
 else {
 
     document.write("Il prezzo del tuo biglietto è " + prezzoBiglietto +" euro" )
+}
+
 }
